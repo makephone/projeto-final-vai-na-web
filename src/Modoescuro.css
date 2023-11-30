@@ -1,0 +1,533 @@
+/*Fazendo Resets Iniciais*/
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+/*Definindo uma cor de fundo da página*/
+body {
+  background-color: #000;
+}
+
+
+/*=============COMPONENTE-MODO-CLARO-E-ESCURO=============*/
+
+/*Estilizando o Botão Modo Escuro eo Botão Modo Claro   com posicionamento,cor e tamannho*/
+.modoEscuro,.modoClaro {
+  top: 2vh;
+  right: 2vh;
+  position: fixed;
+  background-color: #ccc;
+  border-radius: 50%;
+  color: white;
+  height: 5vw;
+  width: 5vw;
+  color: 10px;
+}
+
+/* Estilizando a imagem dentro do botão*/
+.modoEscuro img,.modoClaro img {
+  width: 2vw;
+  height: 2vw;
+}
+
+/*==================FIM==============*/
+
+/*============HEADER===========*/
+
+/*Definindo o Posicionamento da Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+  background: black
+}
+/*Fazendo os filhos de header se tornarem Flex-Box*/
+header * {
+  display: flex;
+}
+/*Definindo um estilo para as imagens filhas de Header */
+header img {
+  margin-left: 2.5vw;
+  height: 25vh;
+  width: 25vh;
+  border-radius: 50%;
+}
+/*Definindo um estilo para as Figure dentro de Header*/
+header figure {
+  width: 30vw;
+}
+/*Definindo um estilo para as tags figcaption filhas da heade*/
+header figcaption {
+  width: 15vw;
+  margin-left: 1vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  color: yellow;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+/*Definindo um estilo para a classe link encarregada da tag link do reac-router-dom*/
+.link {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Definindo um estilo para os botões filhos de header */
+header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: orange;
+  color: #f2f2f2;
+  font-size: 2vw;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+}
+
+/*=========Trabalhando-com-Keyframe===============*/
+
+/*Definindo o Keyframe para navegadores Safari e Chome*/
+@-webkit-keyframes rotating
+
+  {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*Definindo KeyFrame para demais navegadores*/
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*Fazendo com que a animação seja executada assim que o usuário posicionar o mouse sobre o botão de página */
+.rotating:hover {
+  -webkit-animation: rotating 0.5s linear;
+  -moz-animation: rotating 0.5s linear;
+  -ms-animation: rotating 0.5s linear;
+  -o-animation: rotating 0.5s linear;
+  animation: rotating 0.5s linear;
+  background-color: green;
+}
+/*Definindo um Estilo para o titulo da página*/
+header h1 {
+  margin-right: 5vw;
+  background-color: white;
+  font-size: 5vw;
+  padding: 1vw;
+  border-radius: 0 0 10% 0;
+}
+/*Definindo um estilo para a navbar  filha da header*/
+header nav {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  height: 80vh;
+  width: 25vw;
+  z-index: 1;
+  animation-name: fade;
+  animation-duration: 0.5s;
+  padding: 0;
+}
+
+/*Definindo um estilo para lista do menu*/
+header  nav ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+/*Definindo um estilo para  os item de lista do menu de navegação*/
+header nav ul li {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  align-items: center;
+  width: 100%;
+  height: 10vw;
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  color: #fff;
+  font-size: 2vw;
+  background: black;
+  border-style: solid;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  cursor: pointer;
+}
+/*Header definido o posicionamento das ancoragens*/
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Defindo o efeito do mouse ao passar pelas ancoragens*/
+header a:hover {
+  width: 100%;
+  height: 100%;
+  background: #b39ddb;
+  opacity: 0.7;
+  animation-duration: 0.2s;
+}
+
+/*============FIM=========================================*/
+
+
+/*==============MAIN==========*/
+
+/*Definindo uma margem para a main*/
+main {
+  margin-top: 1vh;
+}
+/*Definindo um estilo para as imagem filhas de main */
+main img {
+  width: 100%;
+  height: 65vh;
+}
+
+/*Definindo um tamanho e margin para as imagens filhas de main*/
+main iframe {
+  padding-top: 2vw;
+  width: calc(1.85*75vh);
+  height: 75vh;
+  padding-bottom: 2vw;
+}
+
+/*Definindo um estilo para a seção video com nome do componente Section Video*/
+main .video {
+  padding-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  color: yellow;
+}
+
+/*Definindo um Estilo para o Componente Slider*/
+.slide {
+  width: 100%;
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/*Definindo um estilo para os botões de avança e retorna do componente Slider  */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posiciona  o "botão de próximo do slide" a direita da tela */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Definindo um efeito aos botões de avança e retorna do componente slider */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Definindo um estilo para indicadores do slider */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/*Definindo um estilo para indicadores do slide em execução */
+#active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Criando uma animação de fade trabalhando com keyframe */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/*Definindo alinhamento dos indicadores do slider*/
+.linha {
+  position: absolute;
+  top: 70vh;
+  left: 40%;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+/*Fazendo um texto animado dentro do slide*/
+.texto {
+  font-size: 5vw;
+  color: white;
+  font-weight: bolder;
+  padding-left: 5vw;
+  padding-top: 50vh;
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      red 0%,
+      red 29%,
+      red 100%,
+      red 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+
+/*Defindo um texto de fundo dentro do slider*/
+.fundoTexto {
+  position: absolute;
+  top: 55vh;
+  right: 10vw;
+  background-color: #000;
+  color: #fff;
+  width: 60%;
+  font-size: 5vw;
+  opacity: 0.8;
+}
+
+
+/*======Fim do estilo do Componente Slide====*/
+
+
+/*Inicio do estilo do componente Carreira*/
+/*Definindo um estilo para um sub-titulo da seção*/
+.subtitulo {
+  font-size: 5vw;
+  color: white;
+  font-weight: bolder;
+  padding-left: 5vw;
+  padding-top: 5vh;
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      yellow 0%,
+      yellow 29%,
+      yellow 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: red;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+
+}
+
+/* Componente Section Tecnologias*/
+
+
+/* Configurando a section */
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75vh;
+  background-color: black;
+}
+/*Definindo um grid na classe grid*/
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+/*Dentro dos itens de grid definindo um estilo para os itens */
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  background-color: #717171;
+  height: 10vh;
+}
+/*estilizando somente os itens pares*/
+.item:nth-child(odd) {
+  color: red;
+  font-size: 3vw;
+  font-weight: bolder;
+}
+
+/*Definindo um efeito hover nesses elementos impares*/
+.item:nth-child(odd):hover {
+  background-color: black;
+}
+/*definindo um tamanho para as imagens dentro do grid*/
+.grid img {
+  width: 3.5vw;
+  height: 3.5vw;
+}
+/*Definindo um titulo para fazer um efeito de cabeçalho de tabela */
+.titulo {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  height: 10vh;
+  font-weight: bolder;
+  color: white;
+  font-size: 4vw;
+}
+
+/*===========Footer====================*/
+/*definindo o dimensionamento ,display e cor do footer*/
+footer {
+  display: flex;
+  background-color: black;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 10vh;
+}
+/*Fazendo que todas as tags filhas de footer sejam flex*/
+footer * {
+  display: flex;
+}
+/*Fazendo com que a tag div filha de footer tenha alinhamento centralizado na vertical e um afastamento de 5vw para esquerda*/
+footer div {
+  align-items: center;
+  padding-right: 5vw;
+}
+/* Estilizando o paragrafo do footer*/
+footer p {
+  text-decoration: none;
+  font-size: 1, 5vw;
+  color: #fff;
+  padding: 20px;
+}
+/*Definindo um efeito hover ao passa o mouse mudando a cor*/
+footer p:hover {
+  color: #ccc;
+}
+
+footer img {
+  height: 5vh;
+}
+/*=================FIM===============*/
+
+
+/*=============Página Sobre=============*/
+/*=======Seção Sobre=================== */
+/*Estilizando o componente da seção com uso ca classe section sobre*/
+.sectionSobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: justify;
+  width: 90%;
+  line-height: 5vh;
+  margin-left: 5%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: gray;
+  color: #fff800;
+  padding: 20px 50px;
+}
+/*===================Fim=====================*/
+
+/*===================Página Certificados======*/
+/*Defini a configuração da section */
+.titulos {
+  font-size: 25px;
+  color: white;
+  margin: 2vw;
+  padding: 1vw;
+  border: 8px solid;
+  border-image: repeating-linear-gradient(135deg, #f8ca00 0 10px, #e97f02 0 20px, #bd1550 0 30px) 8;
+  -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: 0.3s, -webkit-mask-position 0.3s 0.3s;
+}
+
+/*Defini a configuração da section  quando passar o mouse em cima*/
+.titulos:hover {
+  --_i: 100%;
+  color: yellow;
+  transition: 0.3s, -webkit-mask-size 0.3s 0.3s;
+}
+
+/* Configuração de  Tela para celular */
+@media only screen and (max-width: 600px) {
+/* Diminuição do titulo da página dentro do componente header*/
+  header h1 {
+    width: 40vw;
+
+  }
+
+}

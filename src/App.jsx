@@ -1,39 +1,22 @@
-import  React from 'react'
-import foto from "./avatar.png"
-import './App.css'
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-function App() {
+{{/*Fazendo importes Necessarios*/}}
+import React from 'react'
+{{/*===============================================================================Fazendo importes do CSS não foi utilizado styled-component para uso do efeito de tela claro e escura  pois caso utliza-se teria que trabalha com context API em todos os componentes como expliquei para a carol na aula do dia 27/11 da noite
+==============================================================================================================================================================*/}}
+import './Modoescuro.css'
+import './Modoclaro.css'
 
+{{/*Fazendo importes Dos Componentes*/}}
+import Footer from './componentes/footer';
+import ModoClaroOuEscuro from './componentes/modoClaroEscuro';
+import Rotas from './routes';
+
+function App() {
 
   return (
     <>
-     <header>
-      <div>
-        <figure>
-        <img src={foto} alt='foto de perfil' title='Tiago De Carvalho'/>
-        <figcaption>Tiago Silva</figcaption>
-        </figure>
-      </div>
-      <h1>Desenvolvedor Frontend</h1>
-     </header>
-     <main>
-      <section>
-      <div className='slide'>
-      <button>/n</button>
-
-      <button>/p</button>
-        
-      </div> 
-        
-        
-
-
-      </section>
-     </main>
-     <footer>
-      <p>rodape</p>
-     </footer>
+      <Rotas />
+      <ModoClaroOuEscuro />
+      <Footer />
     </>
   )
 }
