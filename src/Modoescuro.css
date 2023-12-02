@@ -396,8 +396,7 @@ main .video {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 75vh;
-  background-color: black;
+   background-color: black;
 }
 /*Definindo um grid na classe grid*/
 .grid {
@@ -524,10 +523,62 @@ footer img {
 
 /* Configuração de  Tela para celular */
 @media only screen and (max-width: 600px) {
+ /*Modificação do layout do componente Header */
+  header{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
 /* Diminuição do titulo da página dentro do componente header*/
   header h1 {
-    width: 40vw;
-
+    width: 100vw;
   }
+/*Modificando button para adaptar o reporsivo*/
+header button{
+  position: absolute;
+  right: 2vw;
+  font-size: 5vw;
+  width: 10vw;
+  height: 10vw;
+}
+
+
+/*Dimuição da foto do componente Header*/
+
+  header img{
+    width: 20vw;
+    height: 20vw;
+  }
+ /*Dimuição da altura do video do youtube do componente section carreira*/
+  main iframe {
+     height: 35vh;
+  }
+
+/*Diminuição da altura para o Componente Slider*/
+.slide {
+  height: 60vh;
+  background-size: 100vh 60vh; 
+}
+
+/*Alteração do botão modo claro escuro para display none*/
+.modoEscuro,.modoClaro {
+display: none;
+}
+/*Alteração da barra de navegação*/
+header nav {
+  top:15vh;
+  left: 15vw;
+  width: 70vw;
+}
+/*Alteração do tamanho da fonte do menu*/
+header nav ul li {
+  font-size: 6vw;
+}
+
+.tecnologias{
+  margin-bottom: -10vh;
+}
+
+
 
 }
